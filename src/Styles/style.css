@@ -83,6 +83,7 @@ h1 {
   padding-top: 10vh;
 }
 
+/* Images */
 #upper1 {
   border-radius: 5%;
   left: 125px;
@@ -105,4 +106,76 @@ h1 {
   left: 500px;
   top: 270px;
   transform: rotate(-2deg);
+}
+
+/* Card and card container */
+.container {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  height: 600px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 1em;
+}
+
+.card {
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform 0.5s ease-in-out; /* Smooth transition */
+}
+
+.card-front {
+  background-color: gray;
+  border-radius: 10px;
+  border: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(0deg);
+}
+
+.card-back {
+  background-color: gray; /* Change the color of the back of the card as needed */
+  border-radius: 10px;
+  border: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(180deg);
+}
+
+.card img {
+  max-width: 100%;
+  height: 235px;
+  border-radius: 5px;
+  padding: 0;
+  margin: 10px 0px 0px 0px;
+}
+
+.card h1 {
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+}
+
+.card:hover .card-front {
+  transform: rotateY(180deg);
+}
+
+.card:hover .card-back {
+  transform: rotateY(0deg);
 }
