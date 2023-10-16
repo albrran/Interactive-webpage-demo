@@ -97,6 +97,7 @@ h1 {
 .imgs > * {
   position: fixed;
   width: 100vw;
+  height: 100vwpx;
   bottom: 0;
   z-index: 10;
   translate: 0 100%;
