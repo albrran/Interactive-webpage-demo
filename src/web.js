@@ -31,3 +31,9 @@ const observer = new IntersectionObserver(entries => {
 document.querySelectorAll("[data-img-to-show]").forEach(section => {
   observer.observe(section)
 })
+
+
+
+
+
+
