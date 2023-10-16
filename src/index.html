@@ -5,9 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="Styles/style.css">
     <script src="web.js"></script>
-    <title>Document</title>
+    <title>Interactive webpage demo</title>
 </head>
 <body>
-    <h1>pooper</h1>
-</body>
+    <div class="imgs">
+      <img
+        src="imgs/img-1.png"
+        data-img
+        id="img-1"
+        class="top-section-img show"
+      />
+      <img src="imgs/img-2.png" data-img id="img-2" />
+      <img src="imgs/img-3.png" data-img id="img-3" />
+    </div>
+    <section class="top-section full-screen-section">
+      <div class="left">
+        <h1>Korean Culture Project</h1>
+        <p>
+          The story of 미나씨, and the mysterious secret that she holds.
+        </p>
+      </div>
+      <div class="right"></div>
+    </section>
+    <section class="full-screen-section first-main-section">
+      <h1>Meet the cast</h1>
+      <p>A talented ensemble of actors and actresses who bring a diverse range of skills
+         and personalities to the stage or screen. They are the heart and soul of any production, 
+         working together to create captivating and memorable performances. Here's a brief introduction
+          to the main characters in this imaginary ensemble</p>
+      <div data-img-to-show="#img-1"></div>
+    </section>
+    <section class="full-screen-section">
+      <h1>미나의 비밀</h1>
+      <div data-img-to-show="#img-2"></div>
+    </section>
+    <section class="full-screen-section">
+      <h1>Behind the scenes</h1>
+      <div data-img-to-show="#img-3"></div>
+    </section>
+  </body>
 </html>
